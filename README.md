@@ -10,6 +10,11 @@ Set-Up
 * 2) This command is going to ask you to provide some information about your Cassandra ex: keyspace, column family, partition key, 
      in order to generate particular .cql files.
 
+ex:
+Please provide the keyspace name:
+Please provide the field name of partition key:
+Please provide column family name:
+Please provide field names for SELECT statement. Separated by commas:
 
 
 Execute
