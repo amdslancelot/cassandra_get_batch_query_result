@@ -11,11 +11,12 @@ Set-Up
      in order to generate particular .cql files.
 
 ex:
+```
 Please provide the keyspace name:
 Please provide the field name of partition key:
 Please provide column family name:
 Please provide field names for SELECT statement. Separated by commas:
-
+```
 
 Execute
 ----
@@ -24,7 +25,7 @@ Execute
 `bash cass_pagination.sh (cassandra username) (cassandra password) (cassandra server ip)`
 
 #### Output
-
+```
 Retrieving result for first token(27d525ac-3561-11e4-bb0f-164230d1df67).....done
 Retrieving result for next token(27d5f928-3561-11e4-bb0f-164230d1df67).....done
 Retrieving result for next token(27d515b2-3561-11e4-bb0f-164230d1df67).....done
@@ -47,6 +48,7 @@ Retrieving result for next token(27d5cdf4-3561-11e4-bb0f-164230d1df67).....done
 
 Retrieving result for next token(27d5b76a-3561-11e4-bb0f-164230d1df67).....done
 Retrieving result for next token().....
+```
 
 * You can see in the last line Cassandra doesn't return the next token(partition key), so the job finished successfully.
 
